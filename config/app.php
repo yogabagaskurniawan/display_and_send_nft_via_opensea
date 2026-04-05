@@ -17,6 +17,8 @@ return [
 
     'opensea_api_key' => env('OPENSEA_API_KEY', ''),
     'collection_opensea_smartcontract' => env('COLLECTION_OPENSEA_SMARTCONTRACT', ''),
+    'tatum_rpc_url' => env('TATUM_RPC_URL', ''),
+    'contract_deploy_block' => env('CONTRACT_DEPLOY_BLOCK', 0),
 
     /*
     |--------------------------------------------------------------------------

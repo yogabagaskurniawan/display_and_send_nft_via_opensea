@@ -13,7 +13,16 @@ return new class extends Migration
     {
         Schema::create('nfts', function (Blueprint $table) {
             $table->id();
+            $table->string('contract_address')->index();
+            $table->string('token_id')->index();
+            $table->string('name')->nullable();
+            $table->text('description')->nullable();
+            $table->text('image')->nullable();
+            $table->string('token_standard')->nullable();
+            $table->unsignedBigInteger('supply')->default(0);
             $table->timestamps();
+
+            $table->unique(['contract_address', 'token_id']);
         });
     }
 
