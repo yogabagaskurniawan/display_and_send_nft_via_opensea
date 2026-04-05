@@ -15,6 +15,9 @@ return [
 
     'name' => env('APP_NAME', 'Laravel'),
 
+    'opensea_api_key' => env('OPENSEA_API_KEY', ''),
+    'collection_opensea_smartcontract' => env('COLLECTION_OPENSEA_SMARTCONTRACT', ''),
+
     /*
     |--------------------------------------------------------------------------
     | Application Environment

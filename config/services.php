@@ -14,13 +14,6 @@ return [
     |
     */
 
-    'ipfs' => [
-        'project_id' => env('WALLET_PROJECT_ID'),
-        'project_secret' => env('WALLET_PROJECT_SECRET'),
-        'api' => env('WALLET_IPFS_API'),
-        'gateway' => env('WALLET_IPFS_GATEWAY', 'https://ipfs.io/ipfs/'),
-    ],
-
     'postmark' => [
         'key' => env('POSTMARK_API_KEY'),
     ],

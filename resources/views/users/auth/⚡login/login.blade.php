@@ -2,6 +2,7 @@
     @vite(['resources/js/app.tsx'])
 @endassets
 <div>
+    <div id="walletConnectBtn"></div>
     <button
         type="button"
         wire:click="connectWallet"
