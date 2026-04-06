@@ -8,24 +8,24 @@ Aplikasi web berbasis **Laravel + Livewire + React** untuk menampilkan koleksi N
 
 ## 📋 Daftar Isi
 
-- [Tentang Proyek](#-tentang-proyek)
-- [Preview](#-preview)
-- [Fitur](#-fitur)
-- [Tech Stack](#-tech-stack)
-- [Cara Kerja](#-cara-kerja)
-- [Prasyarat](#-prasyarat)
-- [Instalasi](#-instalasi)
-- [Konfigurasi Environment](#-konfigurasi-environment)
-- [Menjalankan Aplikasi](#-menjalankan-aplikasi)
-- [Perintah Artisan](#-perintah-artisan)
-- [Scheduler (Worker)](#-scheduler-worker)
-- [Struktur Database](#-struktur-database)
-- [Catatan Teknis](#-catatan-teknis)
-- [Lisensi](#-lisensi)
+- [🧩 Tentang Proyek](#tentang-proyek)
+- [🖥️ Preview](#preview)
+- [✨ Fitur](#fitur)
+- [🛠️ Tech Stack](#tech-stack)
+- [⚙️ Cara Kerja](#cara-kerja)
+- [📦 Prasyarat](#prasyarat)
+- [🚀 Instalasi](#instalasi)
+- [🔧 Konfigurasi Environment](#konfigurasi-environment)
+- [▶️ Menjalankan Aplikasi](#menjalankan-aplikasi)
+- [🧑‍💻 Perintah Artisan](#perintah-artisan)
+- [⏰ Scheduler Worker](#scheduler-worker)
+- [🗄️ Struktur Database](#struktur-database)
+- [📝 Catatan Teknis](#catatan-teknis)
+- [📄 Lisensi](#lisensi)
 
 ---
 
-## 🧩 Tentang Proyek
+## Tentang Proyek
 
 Proyek ini adalah contoh implementasi bagaimana menampilkan NFT ERC1155 yang sudah di-mint di OpenSea ke dalam sebuah website, sekaligus menyediakan fitur untuk **mengirim NFT** langsung dari web menggunakan koneksi wallet (MetaMask / WalletConnect).
 
@@ -35,7 +35,7 @@ Selain itu, proyek ini juga memiliki **background worker** yang secara otomatis 
 
 ---
 
-## 🖥️ Preview
+## Preview
 
 Tampilan halaman utama yang menampilkan daftar NFT lengkap dengan informasi traits, balance wallet yang terkoneksi, dan form untuk mengirim NFT:
 
@@ -52,7 +52,7 @@ Setiap kartu NFT menampilkan:
 
 ---
 
-## ✨ Fitur
+## Fitur
 
 - **Tampilkan NFT** — Menampilkan semua NFT dalam sebuah smart contract ERC1155 dalam bentuk kartu grid lengkap dengan gambar, nama, deskripsi, dan traits
 - **Send NFT** — Mengirim NFT ke alamat wallet tujuan langsung dari browser menggunakan koneksi wallet Web3
@@ -65,7 +65,7 @@ Setiap kartu NFT menampilkan:
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 ### Backend
 | Teknologi | Versi | Kegunaan |
@@ -99,7 +99,7 @@ Setiap kartu NFT menampilkan:
 
 ---
 
-## ⚙️ Cara Kerja
+## Cara Kerja
 
 ### Menampilkan NFT
 ```
@@ -138,7 +138,7 @@ Livewire → tampilkan daftar owner
 
 ---
 
-## 📦 Prasyarat
+## Prasyarat
 
 Pastikan sistem kamu sudah terinstall:
 
@@ -158,7 +158,7 @@ Akun yang dibutuhkan:
 
 ---
 
-## 🚀 Instalasi
+## Instalasi
 
 ### 1. Clone repositori
 
@@ -199,7 +199,7 @@ php artisan migrate
 
 ---
 
-## 🔧 Konfigurasi Environment
+## Konfigurasi Environment
 
 Buka file `.env` dan isi variabel berikut:
 
@@ -241,7 +241,7 @@ VITE_REOWN_PROJECT_ID=your_reown_project_id_here     # Project ID dari cloud.reo
 
 ---
 
-## ▶️ Menjalankan Aplikasi
+## Menjalankan Aplikasi
 
 ### Development
 
@@ -269,7 +269,7 @@ php artisan optimize
 
 ---
 
-## 🧑‍💻 Perintah Artisan
+## Perintah Artisan
 
 ### Sinkronisasi NFT Owner
 
@@ -285,7 +285,7 @@ php artisan app:sync-nft-owners --fresh
 
 ---
 
-## ⏰ Scheduler (Worker)
+## Scheduler (Worker)
 
 Worker berjalan otomatis setiap 5 menit untuk memperbarui data owner NFT.
 
@@ -320,7 +320,7 @@ Schedule::command('app:sync-nft-owners')
 
 ---
 
-## 🗄️ Struktur Database
+## Struktur Database
 
 ### Tabel `nfts`
 Menyimpan metadata NFT yang diambil dari OpenSea.
@@ -367,7 +367,7 @@ Menyimpan riwayat pengiriman NFT. Record dibuat otomatis setiap kali user berhas
 
 ---
 
-## 📝 Catatan Teknis
+## Catatan Teknis
 
 ### Mengapa beli di OpenSea tidak muncul di tab "Transactions" contract?
 
@@ -394,13 +394,13 @@ Beberapa RPC provider (seperti Infura) membatasi range block untuk `eth_getLogs`
 
 ---
 
-## 📄 Lisensi
+## Lisensi
 
 Proyek ini menggunakan lisensi [MIT](https://opensource.org/licenses/MIT).
 
 ---
 
-## 👤 Author
+## Author
 
 **Yoga Bagas Kurniawan**
 
